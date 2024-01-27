@@ -5,20 +5,11 @@ use std::io::{self, BufRead, Write};
 // https://www.hackerrank.com/challenges/game-of-stones-1
 
 fn game_of_stones(n: i32) -> String {
-    // in case the First player cannot make a single move, the Second player
-    // wins
-    if n < 2 {
-        return "Second".to_string();
+    if n % 7 < 2 {
+        "Second".to_string()
+    } else {
+        "First".to_string()
     }
-
-    for choice in [2, 3, 5] {
-        let rem = n - choice;
-        if rem < 2 || (rem % 2 != 0 && rem % 3 != 0 && rem % 5 != 0) {
-            return "First".to_string();
-        }
-    }
-
-    "Second".to_string()
 }
 
 fn main() {
