@@ -5,7 +5,7 @@ mod implementation;  // 02
 mod sorting;  // 04
 //mod search;  // 05
 //mod graph_theory;  // 06
-//mod greedy;  // 07
+mod greedy;  // 07
 //mod dynamic_programming;  // 08
 //mod constructive_algorithms;  // 09
 //mod bit_manipulation;  // 10
