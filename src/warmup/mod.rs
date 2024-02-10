@@ -4,3 +4,4 @@ mod compare_the_triplets;
 mod a_very_big_sum;
 mod diagonal_difference;
 mod birthday_cake_candles;
+mod mini_max_sum;
