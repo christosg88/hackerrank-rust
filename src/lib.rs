@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 mod warmup;  // 01
-//mod implementation;  // 02
+mod implementation;  // 02
 //mod strings;  // 03
 mod sorting;  // 04
 //mod search;  // 05
