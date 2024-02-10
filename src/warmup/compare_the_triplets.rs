@@ -2,15 +2,6 @@ use std::env;
 use std::fs::File;
 use std::io::{self, BufRead, Write};
 
-/*
- * Complete the 'compareTriplets' function below.
- *
- * The function is expected to return an INTEGER_ARRAY.
- * The function accepts following parameters:
- *  1. INTEGER_ARRAY a
- *  2. INTEGER_ARRAY b
- */
-
 fn compare_triplets(a: &[i32], b: &[i32]) -> Vec<i32> {
     let mut result = vec![0; 2];
     for (alice, bob) in a.iter().zip(b.iter()) {

@@ -2,13 +2,6 @@ use std::env;
 use std::fs::File;
 use std::io::{self, BufRead, Write};
 
-/*
- * Complete the 'diagonalDifference' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts 2D_INTEGER_ARRAY arr as parameter.
- */
-
 fn diagonal_difference(arr: &[Vec<i32>]) -> i32 {
     let mut sum1: i32 = 0;
     let mut sum2: i32 = 0;
@@ -57,7 +50,7 @@ fn main() {
 }
 
 #[test]
-fn test1() {
+fn test() {
     assert_eq!(
         diagonal_difference(&vec![vec![11, 2, 4], vec![4, 5, 6], vec![10, 8, -12]]),
         15

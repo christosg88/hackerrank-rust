@@ -2,13 +2,6 @@ use std::env;
 use std::fs::File;
 use std::io::{self, BufRead, Write};
 
-/*
- * Complete the 'aVeryBigSum' function below.
- *
- * The function is expected to return a LONG_INTEGER.
- * The function accepts LONG_INTEGER_ARRAY ar as parameter.
- */
-
 fn a_very_big_sum(ar: &[i64]) -> i64 {
     ar.iter().sum()
 }
